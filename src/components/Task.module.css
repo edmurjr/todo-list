@@ -1,0 +1,84 @@
+.tasks {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 3rem;
+  background: var(--gray-500);
+  line-height: 1.6;
+  color: var(--gray-100);
+  font-size: large;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.tasks:hover {
+  background: var(--gray-400);
+}
+
+.tasks + .tasks {
+  margin-top: 0.75rem;
+}
+
+.tasksList {
+  flex: 0 auto 0;
+  height: max-content;
+}
+
+.tasksList button {
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+.circle {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.check {
+  border-radius: 50%;
+  background: var(--purpleDark);
+  color: var(--white);
+  padding: 0.25rem;
+}
+
+.circle:hover {
+  color: var(--blueDark);
+}
+
+.tasksList:nth-child(2) {
+  text-align: start;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.tasksList:nth-child(2) p {
+  font-size: 0.875rem;
+  text-align: start;
+}
+
+.tasksList:nth-child(3) {
+  text-align: end;
+}
+
+.tasksList:nth-child(3) button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  align-items: center;
+  border-radius: 1px;
+}
+
+.tasksList:nth-child(3) button:hover {
+  color: var(--gray-100);
+}
+
+.textCheck {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.textCircle {
+  text-decoration: none;
+}

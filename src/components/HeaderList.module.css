@@ -1,0 +1,51 @@
+.taskList {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  width: 46rem;
+  margin-bottom: 1.25rem;
+}
+
+.taskStatus {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.taskAll {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.taskDone {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.countToDos {
+  padding-top: 3px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--gray-400);
+  color: var(--gray-100);
+  font-size: 0.75rem;
+  height: 1.25rem;
+  width: 1.5rem;
+  font-weight: bold;
+}
+
+.countDone {
+  padding-top: 3px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--gray-400);
+  color: var(--gray-100);
+  font-size: 0.75rem;
+  height: 1.25rem;
+  width: 3rem;
+  font-weight: bold;
+}
